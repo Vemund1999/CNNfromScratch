@@ -20,6 +20,7 @@ The path specified should be at the folder contining the subfolders for the digi
 For example if the path is some_folder/some_other_folder/Digit_testing/0
 Then the specified path for the variable in main.py should be some_folder/some_other_folder/Digit_testing/
 Example:
+
 ![bilde](https://github.com/user-attachments/assets/62588e2e-94a0-4222-a707-c083a1793a9f)
 
 
@@ -28,7 +29,9 @@ Example:
 ## Framework
 I’ve coded a framework for making a CNN. A CNN can be configured when initializing it.
 Here’s an example of a possible configuration:
+
 ![bilde](https://github.com/user-attachments/assets/a743e404-5b32-43a6-bf96-16ad6adce737)
+
 The results of the CNN will somewhat vary, depending on:
 - the configuration of the CNN.
 - values initialized at random (for example weight values initialized to be -0.5 – 0.5).
@@ -38,6 +41,7 @@ For the results, I’ll use the configuration above
 Larger kernels, more neurons, and more layer will increase the running time, as there are more computations that
 needs to be done.
 I’m using the above configuration
+
 ![bilde](https://github.com/user-attachments/assets/781f27f1-f0ea-4496-b94e-fcc23d54180e)
 
 This image shows the average runtime for forward- and back propagation in each layer.
@@ -52,6 +56,7 @@ The times for the dense layers show in large part matrix multiplication between 
 
 
 ## Accuracy
+
 ![bilde](https://github.com/user-attachments/assets/deaedfed-a06b-4f3e-8ab4-7426b46bb2c8)
 ![bilde](https://github.com/user-attachments/assets/c383b727-6d5f-4c41-91d5-73814b8b4e38)
 
@@ -64,15 +69,19 @@ The accuracies starts low. But as the model adjusts it’s weights during traini
 The accuracy eventually stagnates as the there is not much more optimization of the weights to be done.
 
 ## Prediction
+
 There are also methods to predict a single image, and to test the model on testing data.
 If the model predicts a single image from the testing dataset, it manages to label the image correctly
+
 ![bilde](https://github.com/user-attachments/assets/f91c5d36-efb7-435e-9349-59bee4687f5b)
 
 
 ## Kernels
+
 ![bilde](https://github.com/user-attachments/assets/0da16d19-4a29-44bc-8d3b-54c5d1b35dec)
 ![bilde](https://github.com/user-attachments/assets/4055109c-66c0-4895-8ebf-c02c80cf3cf1)
 ![bilde](https://github.com/user-attachments/assets/0d6f69f9-763a-4c6a-89b1-04c291fa9d61)
+
 Here we can see the kernels in the convolutional layer. “Epoch 2” is really the last epoch 3, but the index is used
 in the title (and indexes start at 0).
 The kernels are applied over the images to draw out features of the images, so that the neural network can better
